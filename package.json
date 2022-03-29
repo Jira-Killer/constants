@@ -1,0 +1,17 @@
+{
+  "name": "@jira-killer/error-codes",
+  "version": "1.0.0",
+  "description": "This package contains error codes.",
+  "private": false,
+  "publishConfig": {
+    "cache": "cache/.npm",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AntonSeminski/jk-error-codes.git"
+  },
+  "main": "src/main.js",
+  "author": "Anton Seminski, Vladimir Karpov",
+  "license": "ISC"
+}
