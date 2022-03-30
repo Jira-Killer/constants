@@ -1,4 +1,4 @@
-export const CODES = {
+export const API_ERROR_CODES = {
   USER: {
     DUPLICATE: 'ERROR:USER-DUPLICATE',
     NOT_FOUND: 'ERROR:USER-NOT_FOUND',
