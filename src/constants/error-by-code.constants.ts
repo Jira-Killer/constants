@@ -38,6 +38,12 @@ export const ERROR_BY_CODE = new Map([
       title: 'Error',
       message: 'User not Logged in'
     }],
+    [API_ERROR_CODES.USER.ALREADY_ACTIVATED, {
+      code: API_ERROR_CODES.USER.ALREADY_ACTIVATED,
+      status: HttpStatus.BAD_REQUEST,
+      title: 'Error',
+      message: 'User is already activated!'
+    }],
 
 
     [API_ERROR_CODES.AUTH.INVALID_SPECIAL_CODE, {
@@ -69,6 +75,12 @@ export const ERROR_BY_CODE = new Map([
       status: HttpStatus.UNAUTHORIZED,
       title: 'Error',
       message: 'No token payload found!'
+    }],
+    [API_ERROR_CODES.AUTH.INVALID_TOKEN, {
+      code: API_ERROR_CODES.AUTH.INVALID_TOKEN,
+      status: HttpStatus.UNAUTHORIZED,
+      title: 'Error',
+      message: 'Invalid token!'
     }],
 
 
@@ -189,6 +201,12 @@ export const ERROR_BY_CODE = new Map([
       title: 'Error',
       message: `No such license found!`
     }],
+    [API_ERROR_CODES.LICENSE.ALREADY_EXIST, {
+      code: API_ERROR_CODES.LICENSE.ALREADY_EXIST,
+      status: HttpStatus.BAD_REQUEST,
+      title: 'Error',
+      message: `This License-Assignment already exist!`
+    }],
 
 
     [API_ERROR_CODES.WORKSPACE.NO_ACCESS, {
@@ -211,19 +229,62 @@ export const ERROR_BY_CODE = new Map([
       title: 'Error',
       message: `This Feature is not available for you license!`
     }],
+    [API_ERROR_CODES.FEATURE.NOT_FOUND, {
+      code: API_ERROR_CODES.FEATURE.NOT_FOUND,
+      status: HttpStatus.FORBIDDEN,
+      title: 'Error',
+      message: `There is no such feature!`
+    }],
+
+
+    [API_ERROR_CODES.FEATURE_ASSIGNMENT.ALREADY_EXIST, {
+      code: API_ERROR_CODES.FEATURE_ASSIGNMENT.ALREADY_EXIST,
+      status: HttpStatus.FORBIDDEN,
+      title: 'Error',
+      message: `This feature-assignment already exist!`
+    }],
+    [API_ERROR_CODES.FEATURE_ASSIGNMENT.NOT_AVAILABLE, {
+      code: API_ERROR_CODES.FEATURE_ASSIGNMENT.NOT_AVAILABLE,
+      status: HttpStatus.FORBIDDEN,
+      title: 'Error',
+      message: `This feature-assignment is not available!`
+    }],
+    [API_ERROR_CODES.FEATURE_ASSIGNMENT.NOT_FOUND, {
+      code: API_ERROR_CODES.FEATURE_ASSIGNMENT.NOT_FOUND,
+      status: HttpStatus.FORBIDDEN,
+      title: 'Error',
+      message: `No such feature assignment found!!`
+    }],
 
 
     [API_ERROR_CODES.PERMISSION.NOT_FOUND, {
       code: API_ERROR_CODES.PERMISSION.NOT_FOUND,
       status: HttpStatus.FORBIDDEN,
       title: 'Error',
-      message: `You don't have necessery permissions to enter!`
+      message: `You don't have necessary permissions to enter!`
     }],
     [API_ERROR_CODES.PERMISSION.NONE_AVAILABLE, {
       code: API_ERROR_CODES.PERMISSION.NONE_AVAILABLE,
       status: HttpStatus.FORBIDDEN,
       title: 'Error',
-      message: `You don't have any permissions!`
+      message: `You don't have permissions this operation!`
+    }],
+
+
+    [API_ERROR_CODES.PERMISSION.WRONG_TYPE, {
+      code: API_ERROR_CODES.PERMISSION.WRONG_TYPE,
+      status: HttpStatus.FORBIDDEN,
+      title: 'Error',
+      message: `You permission type!`
+    }],
+
+
+
+    [API_ERROR_CODES.RECORD_SECURITY.NOT_FOUND, {
+      code: API_ERROR_CODES.RECORD_SECURITY.NOT_FOUND,
+      status: HttpStatus.FORBIDDEN,
+      title: 'Error',
+      message: `You don't have permissions to perform this operation!`
     }],
   ]
 )
