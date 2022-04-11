@@ -82,6 +82,12 @@ export const ERROR_BY_CODE = new Map([
       title: 'Error',
       message: 'Invalid token!'
     }],
+    [API_ERROR_CODES.AUTH.EMPTY_CREDENTIALS, {
+      code: API_ERROR_CODES.AUTH.EMPTY_CREDENTIALS,
+      status: HttpStatus.UNAUTHORIZED,
+      title: 'Error',
+      message: 'Empty credentials!'
+    }],
 
 
     [API_ERROR_CODES.SESSION.EMPTY, {
@@ -221,6 +227,12 @@ export const ERROR_BY_CODE = new Map([
       title: 'Error',
       message: `No such Workspace found!`
     }],
+    [API_ERROR_CODES.WORKSPACE.ALREADY_INITIATED, {
+      code: API_ERROR_CODES.WORKSPACE.ALREADY_INITIATED,
+      status: HttpStatus.BAD_REQUEST,
+      title: 'Error',
+      message: `Workspace is already initiated!`
+    }],
 
 
     [API_ERROR_CODES.FEATURE.NOT_AVAILABLE, {
@@ -285,6 +297,14 @@ export const ERROR_BY_CODE = new Map([
       status: HttpStatus.FORBIDDEN,
       title: 'Error',
       message: `You don't have permissions to perform this operation!`
+    }],
+
+
+    [API_ERROR_CODES.PAGE.NOT_FOUND, {
+      code: API_ERROR_CODES.PAGE.NOT_FOUND,
+      status: HttpStatus.NOT_FOUND,
+      title: 'Error',
+      message: `Page not found!`
     }],
   ]
 )
