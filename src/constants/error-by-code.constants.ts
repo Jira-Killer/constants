@@ -298,6 +298,12 @@ export const ERROR_BY_CODE = new Map([
       title: 'Error',
       message: `You don't have permissions to perform this operation!`
     }],
+    [API_ERROR_CODES.RECORD_SECURITY.NO_ACCESS, {
+      code: API_ERROR_CODES.RECORD_SECURITY.NO_ACCESS,
+      status: HttpStatus.FORBIDDEN,
+      title: 'Error',
+      message: `You don't have permissions to perform this operation!`
+    }],
 
 
     [API_ERROR_CODES.PAGE.NOT_FOUND, {
@@ -305,6 +311,27 @@ export const ERROR_BY_CODE = new Map([
       status: HttpStatus.NOT_FOUND,
       title: 'Error',
       message: `Page not found!`
+    }],
+
+    [API_ERROR_CODES.METADATA.OBJECT.NOT_FOUND, {
+        code: API_ERROR_CODES.METADATA.OBJECT.NOT_FOUND,
+        status: HttpStatus.NOT_FOUND,
+        title: 'Error',
+        message: `Object not found!`
+    }],
+    [API_ERROR_CODES.METADATA.FIELD.NOT_FOUND, {
+        code: API_ERROR_CODES.METADATA.FIELD.NOT_FOUND,
+        status: HttpStatus.NOT_FOUND,
+        title: 'Error',
+        message: `Field not found!`
+    }],
+
+
+    [API_ERROR_CODES.ROLE.PARENT.NOT_FOUND, {
+        code: API_ERROR_CODES.ROLE.PARENT.NOT_FOUND,
+        status: HttpStatus.BAD_REQUEST,
+        title: 'Error',
+        message: `Parent role not found!`
     }],
   ]
 )
