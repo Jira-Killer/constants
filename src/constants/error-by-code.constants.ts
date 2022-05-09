@@ -333,5 +333,15 @@ export const ERROR_BY_CODE = new Map([
         title: 'Error',
         message: `Parent role not found!`
     }],
+
+
+    [API_ERROR_CODES.LICENSE_ASSIGNMENT.NOT_AVAILABLE, {
+        code: API_ERROR_CODES.LICENSE_ASSIGNMENT.NOT_AVAILABLE,
+        status: HttpStatus.BAD_REQUEST,
+        title: 'Error',
+        message: `No License Assignment Available! (No Left)!`
+    }],
+
+
   ]
 )
