@@ -343,5 +343,11 @@ export const ERROR_BY_CODE = new Map([
     }],
 
 
+    [API_ERROR_CODES.INVITE.ALREADY_INVITED, {
+        code: API_ERROR_CODES.INVITE.ALREADY_INVITED,
+        status: HttpStatus.BAD_REQUEST,
+        title: 'Error',
+        message: `User is already invited.`
+    }],
   ]
 )
