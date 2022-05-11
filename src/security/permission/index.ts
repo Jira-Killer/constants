@@ -1,3 +1,3 @@
 export * from './permission-index.constants'
-export * from './security.constants'
-export * from './system-permission-names.constant'
+export * from './permission-types.enum'
+export * from './system-permission-names.enum'

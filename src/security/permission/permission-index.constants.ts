@@ -1,5 +1,5 @@
-import {SystemPermissionNames} from "./system-permission-names.constant";
-import {PermissionTypes} from "./security.constants";
+import {SystemPermissionNames} from "./system-permission-names.enum";
+import {PermissionTypes} from "./permission-types.enum";
 
 export const SYSTEM_PERMISSION_INDEXES = {
     [SystemPermissionNames.MANAGE_FIELDS]: `${SystemPermissionNames.MANAGE_FIELDS}.${PermissionTypes.SYSTEM}`,
