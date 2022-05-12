@@ -1,4 +1,4 @@
-export enum EPermissionTypes {
+export const enum EPermissionTypes {
     System = 'System',
     Object = 'Object',
     Feature = 'Feature',

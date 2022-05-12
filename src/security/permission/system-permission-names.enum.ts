@@ -1,4 +1,4 @@
-export enum ESystemPermissionNames {
+export const enum ESystemPermissionNames {
     Invite = 'Workspace_Invite',
     Fire = 'Workspace_Fire',
     ManageFields = 'Manage_Field_Metadata',
