@@ -287,7 +287,7 @@ export const ERROR_BY_CODE = new Map([
       code: API_ERROR_CODES.PERMISSION.WRONG_TYPE,
       status: HttpStatus.FORBIDDEN,
       title: 'Error',
-      message: `You permission type!`
+      message: `You permission type!` //todo ???
     }],
 
 

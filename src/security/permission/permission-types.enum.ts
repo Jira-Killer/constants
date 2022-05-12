@@ -1,6 +1,6 @@
-export enum PermissionTypes {
-    SYSTEM = 'System',
-    OBJECT = 'Object',
-    FEATURE = 'Feature',
-    RECORD = 'Record'
+export enum EPermissionTypes {
+    System = 'System',
+    Object = 'Object',
+    Feature = 'Feature',
+    Record = 'Record'
 }

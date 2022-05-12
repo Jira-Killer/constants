@@ -1,6 +1,6 @@
-export enum SystemPermissionNames {
-    INVITE = 'Workspace_Invite',
-    FIRE = 'Workspace_Fire',
-    MANAGE_FIELDS = 'Manage_Field_Metadata',
-    MANAGE_OBJECTS = 'Manage_Object_Metadata',
+export enum ESystemPermissionNames {
+    Invite = 'Workspace_Invite',
+    Fire = 'Workspace_Fire',
+    ManageFields = 'Manage_Field_Metadata',
+    ManageObjects = 'Manage_Object_Metadata',
 }
