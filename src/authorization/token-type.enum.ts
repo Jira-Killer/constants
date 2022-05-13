@@ -1,5 +1,6 @@
 export enum ETokenType {
     User = 'user',
     Workspace = 'workspace',
-    Refresh = 'refresh'
+    Refresh = 'refresh',
+    Invite = 'invite'
 }
